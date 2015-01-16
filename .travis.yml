@@ -1,0 +1,8 @@
+sudo: false
+
+language: java
+
+jdk: openjdk7
+
+script: javac Test.java && java -Djava.net.preferIPv4Stack=true Test
+

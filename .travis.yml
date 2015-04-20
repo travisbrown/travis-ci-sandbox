@@ -2,3 +2,14 @@ language: scala
 
 scala: 2.10.5
 
+script:
+  - curl -v -o /dev/null http://maven.twttr.com/com/twitter/common/io/0.0.65/io-0.0.65.jar
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.jar
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0-1/libthrift-0.5.0-1.pom
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.jar
+  - curl -v -o /dev/null http://maven.twttr.com/com/twitter/common/io/0.0.65/io-0.0.65.jar
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0-1/libthrift-0.5.0-1.pom
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.jar
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0-1/libthrift-0.5.0-1.pom
+  - curl -v -o /dev/null http://maven.twttr.com/org/apache/thrift/libthrift/0.5.0/libthrift-0.5.0.jar
+

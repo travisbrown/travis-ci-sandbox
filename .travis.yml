@@ -1,5 +1,4 @@
 language: scala
 
-before_script: sbt -Dhttp.keepAlive=false update
 script: sbt test
 

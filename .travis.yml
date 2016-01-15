@@ -1,0 +1,20 @@
+language: scala
+
+scala:
+  - 2.11.7
+
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+
+script:
+  - if [[ "$TRAVIS_BRANCH" == "scalajs" ]];
+    then echo "scalajs";
+    else
+      echo "foo" &&
+      if [[ "$(java -version 2>&1 | awk -F '\"' '/version/ {print $2}')" < "1.8" ]];
+        then echo "java<8";
+        else echo "java8";
+      fi &&
+      echo "qux";
+    fi
